@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="/css/pure.css">
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+
+<div class="pure-g container">
+    <div class="pure-u-2-24"></div>
+    <div class="pure-u-20-24">
+    <div class="single_header">
+        <a href="/" class="page_title">My Notes</a>
+    </div>
+    <div class="content_area">
+        <div class="shelf">
+            <h2>FlaskをHerokuで動かす</h2>
+            <div class="date">2015-07-01 14:44:56 &#43;0900 JST</div>
+        </div>
+        <div class="shelf">
+            <div class="content">
+
+<h3 id="1-flask-を-herokuで動かす:cb0cc48d0a7f78f425de2c2eae671543">1. Flask を Herokuで動かす</h3>
+
+<ul>
+<li>Flask: Pythonの軽量フレームワーク</li>
+<li>Heroku: Paas</li>
+</ul>
+
+<h3 id="2-introduction-事前準備:cb0cc48d0a7f78f425de2c2eae671543">2. Introduction 事前準備</h3>
+
+<p>Heokuのアカウントをつくる</p>
+
+<p>virtualenvで仮想環境をつくる（省略）</p>
+
+<p><code>pip install {package-name}</code>
+pipで必要なパッケージをインストールする</p>
+
+<ul>
+<li>Flask</li>
+<li>gunicorn: httpサーバー。必須</li>
+<li>postgresql: データベース</li>
+</ul>
+
+<p>pip: pythonのパッケージを管理する</p>
+
+<p><code>heroku login</code></p>
+
+<p>ログインする</p>
+
+<h3 id="3-requirements-txtを用意:cb0cc48d0a7f78f425de2c2eae671543">3. requirements.txtを用意</h3>
+
+<p><code>pip freeze &gt; requirements.txt</code></p>
+
+<h3 id="4-procfileを用意:cb0cc48d0a7f78f425de2c2eae671543">4. Procfileを用意</h3>
+
+<p>Procfile: herokuの設定用のテキストファイル</p>
+
+<pre><code class="language-Procfile">web: gunicorn {main-file-name}:app --log-file -
+</code></pre>
+
+<h3 id="5-git-用意:cb0cc48d0a7f78f425de2c2eae671543">5. git 用意</h3>
+
+<p><code>git init</code></p>
+
+<p><code>git add {file-name.py}</code></p>
+
+<p><code>git commit -m “{commit message}&quot;</code></p>
+
+<p><code>heroku create</code></p>
+
+<p><code> git push heroku master</code></p>
+
+<h3 id="scale:cb0cc48d0a7f78f425de2c2eae671543">scale</h3>
+
+<p><code>heroku sacale web=1</code></p>
+
+<p><code>heroku ps</code></p>
+
+<p>確認。</p>
+
+<p><code>heroku open</code></p>
+
+<p>ブラウザで開く。</p>
+</div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    </div>
+    <div class="pure-u-2-24"></div>
+</div>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

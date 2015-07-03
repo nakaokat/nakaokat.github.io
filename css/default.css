@@ -2,6 +2,12 @@ body{
     background-color: hsl(360, 0%, 96%);
 }
 
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+}
+
 a{
     color: hsl(180, 20%, 10%);
     text-decoration: none;
@@ -84,6 +90,11 @@ a.page_title:visited{
     background-color: hsl(360, 0%, 90%);
 }
 
+.single_main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
 
 .single_header{
     height:35px;

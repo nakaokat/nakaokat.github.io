@@ -17,25 +17,23 @@
       <guid>http://localhost:1313/virtualenv_python/</guid>
       <description>
 
-&lt;h3 id=&#34;virutualenv-をインストールする:12153cb64234be34aeefae32243b0009&#34;&gt;virutualenv をインストールする&lt;/h3&gt;
+&lt;h3 id=&#34;1-virutualenv-をインストールする:12153cb64234be34aeefae32243b0009&#34;&gt;1. virutualenv をインストールする&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;pip install virtualenv&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;仮想環境を作る:12153cb64234be34aeefae32243b0009&#34;&gt;仮想環境を作る&lt;/h2&gt;
+&lt;h3 id=&#34;2-仮想環境を作る:12153cb64234be34aeefae32243b0009&#34;&gt;2. 仮想環境を作る&lt;/h3&gt;
 
 &lt;p&gt;省略。&lt;/p&gt;
 
 &lt;p&gt;Pycharmで作れるので、Pycharmをつかった。&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;仮想環境を実行する:12153cb64234be34aeefae32243b0009&#34;&gt;仮想環境を実行する&lt;/h3&gt;
+&lt;h3 id=&#34;3-仮想環境を実行する:12153cb64234be34aeefae32243b0009&#34;&gt;3. 仮想環境を実行する&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;source {venv-name}/bin/activate&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;source&lt;/code&gt;コマンド: ファイルのソースを実行する&lt;/p&gt;
 
-&lt;h3 id=&#34;仮想環境から抜ける:12153cb64234be34aeefae32243b0009&#34;&gt;仮想環境から抜ける&lt;/h3&gt;
+&lt;h3 id=&#34;4-仮想環境から抜ける:12153cb64234be34aeefae32243b0009&#34;&gt;4. 仮想環境から抜ける&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;deactivate&lt;/code&gt;&lt;/p&gt;
 </description>
@@ -122,19 +120,17 @@ pipで必要なパッケージをインストールする&lt;/p&gt;
       <guid>http://localhost:1313/post/hot_to_use_hugo/</guid>
       <description>
 
-&lt;h2 id=&#34;new-post:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;new post&lt;/h2&gt;
+&lt;h3 id=&#34;1-new-post:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;1. new post&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;hugo new {new-post}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;hugo new post/{new-post}&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;server:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;server&lt;/h2&gt;
+&lt;h3 id=&#34;2-build:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;2. Build&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme={theme-name}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;ビルドする。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme=hugo-zen&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     

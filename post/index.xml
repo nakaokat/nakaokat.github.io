@@ -17,19 +17,17 @@
       <guid>http://localhost:1313/post/hot_to_use_hugo/</guid>
       <description>
 
-&lt;h2 id=&#34;new-post:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;new post&lt;/h2&gt;
+&lt;h3 id=&#34;1-new-post:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;1. new post&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;hugo new {new-post}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;hugo new post/{new-post}&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;server:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;server&lt;/h2&gt;
+&lt;h3 id=&#34;2-build:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;2. Build&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme={theme-name}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;ビルドする。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme=hugo-zen&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     

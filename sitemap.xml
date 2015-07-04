@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
     <lastmod>2015-07-04T19:03:02+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/hugo/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/post/hugo/</loc>
     <lastmod>2015-07-04T19:03:02+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/virtualenv_python/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/virtualenv_python/</loc>
     <lastmod>2015-07-01T15:12:13+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/flask_heroku/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/flask_heroku/</loc>
     <lastmod>2015-07-01T14:44:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/hot_to_use_hugo/</loc>
+    <loc>http://replace-this-with-your-hugo-site.com/post/hot_to_use_hugo/</loc>
     <lastmod>2015-06-23T18:03:09+09:00</lastmod>
   </url>
   

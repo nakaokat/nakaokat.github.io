@@ -6,8 +6,36 @@
     <description>Recent content on My Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 01 Jul 2015 15:12:13 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2015 19:03:02 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo(静的Webサイトエンジン)とは</title>
+      <link>http://localhost:1313/post/hugo/</link>
+      <pubDate>Sat, 04 Jul 2015 19:03:02 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/</guid>
+      <description>
+
+&lt;h3 id=&#34;1-hogo-とは:32ab7241d48fcc174c877413a917f8cf&#34;&gt;1. Hogo とは&lt;/h3&gt;
+
+&lt;p&gt;Hugoとは静的サイトをシンプルにつくることのできるツールです。生成されるwebサイトは、WordpressやTumblrなどでつくったブログにも見えます。しかしWordpresssなどと異なり、コンテンツの作成はすべてローカルで行います。&lt;/p&gt;
+
+&lt;p&gt;公式サイト &lt;a href=&#34;http://gohugo.io/&#34;&gt;http://gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-hogo-の特徴とメリット:32ab7241d48fcc174c877413a917f8cf&#34;&gt;2. Hogo の特徴とメリット&lt;/h3&gt;
+
+&lt;p&gt;HugoはGo言語でつくられています。Go言語はコンパイラ言語なので、インタラプタ言語のPythonでつくられたPelicanや、RubyでつくられたJekyll, Octpress よりも高速に動作するのが特徴です。&lt;/p&gt;
+
+&lt;h3 id=&#34;3-hugo-の導入と使いかた:32ab7241d48fcc174c877413a917f8cf&#34;&gt;3. Hugo の導入と使いかた&lt;/h3&gt;
+
+&lt;p&gt;Hogoはコマンドラインで使います。コマンドラインの基本的な操作ができる必要があります。Hogoの使用にはGo言語の知識は必要ありません。&lt;/p&gt;
+
+&lt;p&gt;具体的なHugoのつかいかたは公式ドキュメント( &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;http://gohugo.io/overview/introduction/&lt;/a&gt; )を参照してください。&lt;/p&gt;
+
+&lt;p&gt;Hugoつくった静的サイトをWebで公開するにはFTPなどでサーバーにアップロードするだけです。Github Pages とあわせて使うと、簡単に無料で自分のWebサイトを公開することができます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>virutualenv で Pythonの仮想環境をつくる</title>

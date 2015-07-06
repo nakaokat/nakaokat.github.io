@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My Notes</title>
+    <link>http://nakaokat.github.io/post/</link>
+    <description>Recent content in Posts on My Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 04 Jul 2015 19:03:02 +0900</lastBuildDate>
+    <atom:link href="http://nakaokat.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo(静的Webサイトエンジン)とは</title>
+      <link>http://nakaokat.github.io/post/hugo/</link>
+      <pubDate>Sat, 04 Jul 2015 19:03:02 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/hugo/</guid>
+      <description>
+
+&lt;h3 id=&#34;1-hogo-とは:32ab7241d48fcc174c877413a917f8cf&#34;&gt;1. Hogo とは&lt;/h3&gt;
+
+&lt;p&gt;Hugoとは静的サイトをシンプルにつくることのできるツールです。生成されるwebサイトは、WordpressやTumblrなどでつくったブログにも見えます。しかしWordpresssなどと異なり、コンテンツの作成はすべてローカルで行います。&lt;/p&gt;
+
+&lt;p&gt;公式サイト &lt;a href=&#34;http://gohugo.io/&#34;&gt;http://gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-hogo-の特徴とメリット:32ab7241d48fcc174c877413a917f8cf&#34;&gt;2. Hogo の特徴とメリット&lt;/h3&gt;
+
+&lt;p&gt;HugoはGo言語でつくられています。Go言語はコンパイラ言語なので、インタラプタ言語のPythonでつくられたPelicanや、RubyでつくられたJekyll, Octpress よりも高速に動作するのが特徴です。&lt;/p&gt;
+
+&lt;h3 id=&#34;3-hugo-の導入と使いかた:32ab7241d48fcc174c877413a917f8cf&#34;&gt;3. Hugo の導入と使いかた&lt;/h3&gt;
+
+&lt;p&gt;Hogoはコマンドラインで使います。コマンドラインの基本的な操作ができる必要があります。Hogoの使用にはGo言語の知識は必要ありません。&lt;/p&gt;
+
+&lt;p&gt;具体的なHugoのつかいかたは公式ドキュメント( &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;http://gohugo.io/overview/introduction/&lt;/a&gt; )を参照してください。&lt;/p&gt;
+
+&lt;p&gt;Hugoつくった静的サイトをWebで公開するにはFTPなどでサーバーにアップロードするだけです。Github Pages とあわせて使うと、簡単に無料で自分のWebサイトを公開することができます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugoの使いかた</title>
+      <link>http://nakaokat.github.io/post/hot_to_use_hugo/</link>
+      <pubDate>Tue, 23 Jun 2015 18:03:09 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/hot_to_use_hugo/</guid>
+      <description>
+
+&lt;h3 id=&#34;1-new-post:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;1. new post&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;hugo new {new-post}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;hugo new post/{new-post}&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-build:4f2dfb967fc2e23275831000eeb4843c&#34;&gt;2. Build&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme={theme-name}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ビルドする。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

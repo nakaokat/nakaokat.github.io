@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="My Notes on Hugo">
+<title> - My Notes on Hugo</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="/"><img src="https://pbs.twimg.com/profile_images/607682083381641216/ptvLHByf_400x400.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline"></h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="0001-01-01">January 01, 0001</time></span>
+			<section itemprop="entry-text">
+				
+
+<h1 id="flask-を-herokuで動かす:2bb839201c589c4e7a5ceb16dd13f070">Flask を Herokuで動かす</h1>
+
+<p>Flask: Pythonの軽量フレームワーク
+Heroku: Paas</p>
+
+<h2 id="introduction-事前準備:2bb839201c589c4e7a5ceb16dd13f070">Introduction 事前準備</h2>
+
+<p>Heokuのアカウントをつくる</p>
+
+<p>python, setup-tools, pip, virtualenv, postgresql をインストールしておく</p>
+
+<p><code>heroku login</code></p>
+
+<p>ログインする</p>
+
+<p><code>pip install Flask</code>
+<code>pip install gunicorn</code></p>
+
+<h2 id="requirements-txtを用意:2bb839201c589c4e7a5ceb16dd13f070">requirements.txtを用意</h2>
+
+<p><code>pip freeze &gt; requirements.txt</code></p>
+
+<p>pip: pythonのパッケージを管理する</p>
+
+<h2 id="procfileを用意:2bb839201c589c4e7a5ceb16dd13f070">Procfileを用意</h2>
+
+<p>Procfile: herokuの設定用のテキストファイル</p>
+
+<pre><code class="language-Procfile">web: gunicorn {main-file-name}:app --log-file -
+</code></pre>
+
+<h2 id="git-用意:2bb839201c589c4e7a5ceb16dd13f070">git 用意</h2>
+
+<p><code>git init</code></p>
+
+<p><code>git add {file-name.py}</code></p>
+
+<p><code>git commit -m “{commit message}&quot;</code></p>
+
+<p><code>heroku create</code></p>
+
+<p><code> git push heroku master</code></p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			
+		</div>
+		<div class="copyright">Copyright &copy; </div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

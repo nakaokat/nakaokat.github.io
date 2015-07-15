@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on My Notes</title>
+    <link>http://nakaokat.github.io/tags/git/</link>
+    <description>Recent content in Git on My Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 09 Jul 2015 02:12:16 +0900</lastBuildDate>
+    <atom:link href="http://nakaokat.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Gitとは:分散型バージョン管理システム</title>
+      <link>http://nakaokat.github.io/post/git/</link>
+      <pubDate>Thu, 09 Jul 2015 02:12:16 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/git/</guid>
+      <description>
+
+&lt;h3 id=&#34;gitとは:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Gitとは&lt;/h3&gt;
+
+&lt;p&gt;Git( &lt;a href=&#34;https://git-scm.com/&#34;&gt;https://git-scm.com/&lt;/a&gt; )とはプログラムのソースコードなどの変更履歴を管理するバージョン管理システムとよばれるソフトウェアのひとつです。バージョン管理システムとは、機能の追加やバグの修正などの変更ごとに履歴を記録し、管理するシステムのことです。&lt;/p&gt;
+
+&lt;h3 id=&#34;gitの特徴:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Gitの特徴&lt;/h3&gt;
+
+&lt;p&gt;Gitはオープンソースであり無料です。Gitは分散型のバージョン管理システムです。分散型とは、ソースコードを唯一の場所（リポジトリ※）に保管し、管理する方法です。一方でGitなどの分散型バージョン管理システムでは複数のリポジトリが存在します。&lt;/p&gt;
+
+&lt;p&gt;※ リポジトリ repository とはソースコードの保管されてる場所、ディレクトリのことを指します。&lt;/p&gt;
+
+&lt;p&gt;Gitが使用されている最も有名な例はLinuxでしょう。GitはLinuxの開発のために2005年につくられました。Gitの詳しい歴史は Wikipediaなどを参照してください。&lt;/p&gt;
+
+&lt;p&gt;git - Wikipedia
+&lt;a href=&#34;https://ja.wikipedia.org/wiki/Git&#34;&gt;https://ja.wikipedia.org/wiki/Git&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;githubとは:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Githubとは&lt;/h3&gt;
+
+&lt;p&gt;Github( &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt; )とは、GitのリポジトリをホスティングするWebサービスです。Githubの運営はGithub社によって運営されています。Githubの運営と Git の開発には直接的な関係はありません。つまりGitとはシステム、ソフトウェアのことを指し、Githubとはそのシステムを利用するサービスのひとつということです。&lt;/p&gt;
+
+&lt;p&gt;Gitの人気や知名度の高さには、Githubの人気も大きな貢献をしていると思います。ですのでGitの紹介の記事ですが、Githubについての項目を設けました。&lt;/p&gt;
+
+&lt;h3 id=&#34;gitの使いかた:1c1ef82aae62aeea8eedcb5f455b129b&#34;&gt;Gitの使いかた&lt;/h3&gt;
+
+&lt;p&gt;Gitはコマンドラインで操作しますが、GUIのクライアントアプリもあります。GUIのクライアントとしては、Github社のGithub（アプリ、無料）や、Atlassian社のSourceTree（アプリ無料）などが有名です。&lt;/p&gt;
+
+&lt;p&gt;コマンドラインで操作するにしても、GUIのクライアントアプリを使用するにしても、Gitを構成するいくつかの概念について学ぶ必要があります。リポジトリ、コミット、プッシュ、クローンなどの見なれない言葉がたくさんでてきます。&lt;/p&gt;
+
+&lt;p&gt;オンラインにはGitを学ぶためのたくさんのリソースが公開されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codeschool.com/courses/try-git&#34;&gt;Try Git - Code School&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.atlassian.com/ja/git/tutorial/git-basics&#34;&gt;Git の基本 | アトラシアン Git チュートリアル&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/how-to-use-git-and-github--ud775&#34;&gt;How to Use Version Control in Git &amp;amp; GitHub - Udacity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

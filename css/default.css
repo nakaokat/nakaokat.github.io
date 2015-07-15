@@ -35,12 +35,11 @@ a.page_title:visited{
 
 .header{
     color: hsl(360, 0%, 100%);;
-    background-color: hsl(160, 30%, 25%);
+    background-color: #009688;
     height: 250px;
 }
 
 .header_left{
-    background-color: hsl(160, 30%, 40%);
     height: 100%;
     ;
     padding-left: 10px;
@@ -98,7 +97,7 @@ a.page_title:visited{
 
 .single_header{
     height:35px;
-    background-color: hsl(160, 30%, 25%);
+    background-color: #009688;
     padding-top: 10px;
     padding-left: 10px;
 }

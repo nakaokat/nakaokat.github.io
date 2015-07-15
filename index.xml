@@ -84,10 +84,10 @@
     
     <item>
       <title>virutualenv で Pythonの仮想環境をつくる</title>
-      <link>http://nakaokat.github.io/virtualenv_python/</link>
+      <link>http://nakaokat.github.io/post/virtualenv_python/</link>
       <pubDate>Wed, 01 Jul 2015 15:12:13 +0900</pubDate>
       
-      <guid>http://nakaokat.github.io/virtualenv_python/</guid>
+      <guid>http://nakaokat.github.io/post/virtualenv_python/</guid>
       <description>
 
 &lt;h3 id=&#34;1-virutualenv-をインストールする:12153cb64234be34aeefae32243b0009&#34;&gt;1. virutualenv をインストールする&lt;/h3&gt;
@@ -114,10 +114,10 @@
     
     <item>
       <title>FlaskをHerokuで動かす</title>
-      <link>http://nakaokat.github.io/flask_heroku/</link>
+      <link>http://nakaokat.github.io/post/flask_heroku/</link>
       <pubDate>Wed, 01 Jul 2015 14:44:56 +0900</pubDate>
       
-      <guid>http://nakaokat.github.io/flask_heroku/</guid>
+      <guid>http://nakaokat.github.io/post/flask_heroku/</guid>
       <description>
 
 &lt;h3 id=&#34;1-flask-を-herokuで動かす:cb0cc48d0a7f78f425de2c2eae671543&#34;&gt;1. Flask を Herokuで動かす&lt;/h3&gt;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on My Notes</title>
+    <link>http://localhost:1313/categories/design/</link>
+    <description>Recent content in Design on My Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 14 Jul 2015 05:03:12 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Elements of Design</title>
+      <link>http://localhost:1313/post/elements_of_design/</link>
+      <pubDate>Tue, 14 Jul 2015 05:03:12 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/elements_of_design/</guid>
+      <description>
+
+&lt;h3 id=&#34;デザインにおける意味:1537871892383339d821219335270587&#34;&gt;デザインにおける意味&lt;/h3&gt;
+
+&lt;p&gt;デザインにおける意味とは、デザインされて表現されたものに込められたデザインするものの意図のことである。&lt;/p&gt;
+
+&lt;h3 id=&#34;配置と意味:1537871892383339d821219335270587&#34;&gt;配置と意味&lt;/h3&gt;
+
+&lt;p&gt;空間に配置されたものは、距離が近いほど、関係性が強いと感じる。&lt;/p&gt;
+
+&lt;p&gt;例えば、書籍のタイトルのすぐそばに名前があれば、それは書籍に最も関係する人物である著者だと感じる。&lt;/p&gt;
+
+&lt;h3 id=&#34;ハイライト効果:1537871892383339d821219335270587&#34;&gt;ハイライト効果&lt;/h3&gt;
+
+&lt;p&gt;目立つものほど、重要だと感じる。&lt;/p&gt;
+
+&lt;p&gt;例えば、文章のなかのある単語が太字になっていたり、線が引かれていたりすると、そこに書かれていることが重要だと感じる。&lt;/p&gt;
+
+&lt;h3 id=&#34;強調:1537871892383339d821219335270587&#34;&gt;強調&lt;/h3&gt;
+
+&lt;p&gt;周囲のものよりも大きいものは、その他の小さなものよりも目立つ。したがってハイライト効果より、周囲のものよりも大きいものは重要だと感じる。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

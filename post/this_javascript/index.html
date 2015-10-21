@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="page_title">
+                <div class="col-md-12 col-sm-12">
+                    <a href="/">My Notes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single_title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h2>JavaScriptのthisキーワードとは</h2>
+                <div class="date">
+                    2015-10-13 23:15:19 &#43;0900 JST
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="content">
+                    <p>thisとは関数に暗黙に渡されるパラメーターで、その関数をもつオブジェクトを指す。</p>
+
+<pre><code class="language-JavaScript">var alice = {
+    name: &quot;Alice&quot;,
+    getName: function(){
+        return this.name;
+    }
+}
+
+console.log(alice.getName());
+</code></pre>
+
+<p>簡単にいうと、メソッドのドットの左側にあるオブジェクト。なので関数を呼び出すオブジェクトが異なれば、thisも変わる。</p>
+
+<p>以下、MDNの説明。</p>
+
+<blockquote>
+<p>this キーワードはコンテキストオブジェクト (カレントオブジェクト) を参照します。一般的に、メソッド内では this は呼び出し元オブジェクト (calling object)を参照します。</p>
+
+<p>thisを使うと現在のコンテキストオブジェクトへの参照を得ることができ、その実行コンテキストのプロパティやメソッドを this を通して (this.member のようにして) 参照できます。コンテキストオブジェクトは関数に渡される「隠しパラメータ」とみなす事が出来ます。this が渡されるのには 3 通りの方法があります。</p>
+
+<p>this - JavaScript | MDN(<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/this">https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/this</a>)</p>
+</blockquote>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+

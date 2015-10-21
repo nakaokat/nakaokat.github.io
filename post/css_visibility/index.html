@@ -26,9 +26,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <h2>Hugoを使う</h2>
+                <h2>CSSでvisibilityプロパティを使う</h2>
                 <div class="date">
-                    2015-06-23 18:03:09 &#43;0900 JST
+                    2015-10-21 17:31:09 &#43;0900 JST
                 </div>
             </div>
         </div>
@@ -42,17 +42,26 @@
                 <div class="content">
                     
 
-<h3 id="1-new-post:4f2dfb967fc2e23275831000eeb4843c">1. new post</h3>
+<p>CSSで要素を表示させたくない場合、<code>display:none</code>だとDOMから要素自体を削除してしまう。</p>
 
-<p><code>hugo new {new-post}</code></p>
+<p>visibilityを使用すれば、要素自体は削除せずに要素を非表示にすることができる。</p>
 
-<p><code>hugo new post/{new-post}</code></p>
+<pre><code class="language-CSS">.invisible{
+    visibility: hidden;
+    opacity: 0;
+}
+</code></pre>
 
-<h3 id="2-build:4f2dfb967fc2e23275831000eeb4843c">2. Build</h3>
+<p>transitionプロパティを使用してアニメーションで表示することも、visibilityプロパティを使うことで可能になる。</p>
 
-<p><code>hugo server --watch --buildDrafts --theme={theme-name}</code></p>
+<pre><code class="language-CSS">.target{
+    transition: all .4s;
+}
+</code></pre>
 
-<p>ビルドする。</p>
+<h3 id="参考:06b802778c2ceb6864905ce1de17aa9f">参考</h3>
+
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/visibility">visibility - CSS | MDN</a></p>
 
                 </div>
             </div>

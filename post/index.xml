@@ -6,8 +6,119 @@
     <description>Recent content in Posts on My Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 09 Jul 2015 02:12:16 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2015 17:31:09 +0900</lastBuildDate>
     <atom:link href="http://nakaokat.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CSSでvisibilityプロパティを使う</title>
+      <link>http://nakaokat.github.io/post/css_visibility/</link>
+      <pubDate>Wed, 21 Oct 2015 17:31:09 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/css_visibility/</guid>
+      <description>
+
+&lt;p&gt;CSSで要素を表示させたくない場合、&lt;code&gt;display:none&lt;/code&gt;だとDOMから要素自体を削除してしまう。&lt;/p&gt;
+
+&lt;p&gt;visibilityを使用すれば、要素自体は削除せずに要素を非表示にすることができる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-CSS&#34;&gt;.invisible{
+    visibility: hidden;
+    opacity: 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;transitionプロパティを使用してアニメーションで表示することも、visibilityプロパティを使うことで可能になる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-CSS&#34;&gt;.target{
+    transition: all .4s;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;参考:06b802778c2ceb6864905ce1de17aa9f&#34;&gt;参考&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/visibility&#34;&gt;visibility - CSS | MDN&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>コンストラクタ(Javascript)とは</title>
+      <link>http://nakaokat.github.io/post/constructor_javascript/</link>
+      <pubDate>Fri, 16 Oct 2015 12:40:16 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/constructor_javascript/</guid>
+      <description>&lt;p&gt;JavaScriptにおけるコンストラクタ Constructor とは、new 演算子をつけて呼び出すことを前提としてつくられた関数。&lt;/p&gt;
+
+&lt;p&gt;JavaScriptでは関数に new 演算子をつけて呼び出すと、新しいオブジェクトがつくられる。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;コンストラクタは大文字で始まる名前の変数に格納されるのが慣例である。コンストラクタをnew演算子を使わずに呼び出した場合、良くない事態が発生する可能性があるにもかかわらず、コンパイル時にも実行時にも何も警告もでない。&lt;/p&gt;
+
+&lt;p&gt;JavaScript Good Parts p.35&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScriptのthisキーワードとは</title>
+      <link>http://nakaokat.github.io/post/this_javascript/</link>
+      <pubDate>Tue, 13 Oct 2015 23:15:19 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/this_javascript/</guid>
+      <description>&lt;p&gt;thisとは関数に暗黙に渡されるパラメーターで、その関数をもつオブジェクトを指す。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;var alice = {
+    name: &amp;quot;Alice&amp;quot;,
+    getName: function(){
+        return this.name;
+    }
+}
+
+console.log(alice.getName());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;簡単にいうと、メソッドのドットの左側にあるオブジェクト。なので関数を呼び出すオブジェクトが異なれば、thisも変わる。&lt;/p&gt;
+
+&lt;p&gt;以下、MDNの説明。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;this キーワードはコンテキストオブジェクト (カレントオブジェクト) を参照します。一般的に、メソッド内では this は呼び出し元オブジェクト (calling object)を参照します。&lt;/p&gt;
+
+&lt;p&gt;thisを使うと現在のコンテキストオブジェクトへの参照を得ることができ、その実行コンテキストのプロパティやメソッドを this を通して (this.member のようにして) 参照できます。コンテキストオブジェクトは関数に渡される「隠しパラメータ」とみなす事が出来ます。this が渡されるのには 3 通りの方法があります。&lt;/p&gt;
+
+&lt;p&gt;this - JavaScript | MDN(&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/this&#34;&gt;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/this&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Homebrewを使う</title>
+      <link>http://nakaokat.github.io/post/homebrew/</link>
+      <pubDate>Wed, 30 Sep 2015 01:00:31 +0900</pubDate>
+      
+      <guid>http://nakaokat.github.io/post/homebrew/</guid>
+      <description>
+
+&lt;h3 id=&#34;homebrewとは:399f29744c891ad533f638b5c82362f6&#34;&gt;Homebrewとは&lt;/h3&gt;
+
+&lt;p&gt;Mac OSX用のパーケージ管理システムである。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://brew.sh/&#34;&gt;http://brew.sh/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;よく使うコマンド:399f29744c891ad533f638b5c82362f6&#34;&gt;よく使うコマンド&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;brew doctor&lt;/code&gt;：brew が正常に使えるかをチェックする。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew install {package-name}&lt;/code&gt;：パッケージをインストールする。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew outdated&lt;/code&gt;：新しいバージョンのあるパッケージをリストアップする。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew update&lt;/code&gt;：HomebrewのFormula List をアップデートする。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew upgrade {package-name}&lt;/code&gt;：{package-name}を新しいバージョンにアップグレードする。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew upgrade&lt;/code&gt;：更新のあるパッケージをすべてアップグレードする。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Gitとは:分散型バージョン管理システム</title>
@@ -186,7 +297,7 @@ pipで必要なパッケージをインストールする&lt;/p&gt;
     </item>
     
     <item>
-      <title>Hugoの使いかた</title>
+      <title>Hugoを使う</title>
       <link>http://nakaokat.github.io/post/hot_to_use_hugo/</link>
       <pubDate>Tue, 23 Jun 2015 18:03:09 +0900</pubDate>
       

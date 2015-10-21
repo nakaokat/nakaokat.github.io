@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="page_title">
+                <div class="col-md-12 col-sm-12">
+                    <a href="/">My Notes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single_title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h2>AJAXとAPIを使う</h2>
+                <div class="date">
+                    2015-09-29 23:27:53 &#43;0900 JST
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="content">
+                    
+
+<h3 id="apiとは-web:67c87e35c4f3269e4911f43f3659fa2d">APIとは（Web）</h3>
+
+<p>WebにおけるAPIとは、他のWebサービスの機能を、それ以外のサイトなどで使用するための手続きを定めたもの。</p>
+
+<h3 id="例１-google-maps:67c87e35c4f3269e4911f43f3659fa2d">例１：Google Maps</h3>
+
+<p>任意の住所のストリートビューの画像を取得するAPIを使う。APIキーをGoogleのDeveloperサイトから発行して使用する。</p>
+
+<pre><code class="language-JavaScript">// jQueryのメソッドをつかって、住所の値を取得する（インプット）
+var address = $('#city').val() + ', ' +$('#street').val();
+
+//APIキーはGoogle のDeveloperサイトに登録してあらかじめ取得する
+var apiKey = {YOUR API KEY}
+
+//APIを利用する
+var urlStr = 'https://maps.googleapis.com/maps/api/streetview?size=960x500&amp;location=' + address + '&amp;heading=151.78&amp;pitch=-0.76&amp;key=' + apiKey;
+
+//取得した画像のurlをDOMに追加する（アウトプット）
+$body.append('&lt;img class=&quot;bgimg&quot; src= &quot;'+urlStr+'&quot;&gt;');
+</code></pre>
+
+<h3 id="ajaxとは:67c87e35c4f3269e4911f43f3659fa2d">AJAXとは</h3>
+
+<p>AJAXとは、ページをリロードすることなくデータを取得してWebページの一部を更新する技術。Asyncronous 非同期 + JavaScript + XMLの略称だが、データのフォーマットはXMLだけでなくJSONでおこなわれることも多い。</p>
+
+<h3 id="例２-wikipedia:67c87e35c4f3269e4911f43f3659fa2d">例２：Wikipedia</h3>
+
+<p>キーワードを含む記事のタイトルやサマリーなどの情報を取得する。jQueryのajax()メソッドを使う。</p>
+
+<pre><code class="language-JavaScript">var wikipediaURL = &quot;https://en.wikipedia.org/w/api.php&quot;
+$.ajax(wikipediaURL, {
+    dataType: 'jsonp',
+    data: { action: 'query', list: 'search', srsearch: cityStr, format: 'json' },
+    success: function(data, textStatus, jqXHR){
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqXHR);
+        var searchResult = data.query.search;
+        for (i = 0; i&lt;searchResult.length; i++){
+            var requltURL = 'https://en.wikipedia.org/wiki/' + searchResult[i].title;
+            $wikiElem.append(
+                '&lt;li&gt;' + '&lt;a href=&quot;' + requltURL + '&quot;&gt;' + searchResult[i].title + '&lt;/a&gt;' +'&lt;/li&gt;'
+            );
+        }
+    }
+});
+</code></pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

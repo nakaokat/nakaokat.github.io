@@ -27,6 +27,7 @@
     if (p.status) rt.appendChild(el("span", "st", p.status));
     li.appendChild(rt);
     li.appendChild(el("p", "desc", p.description));
+    if (p.detail) li.appendChild(el("p", "detail", p.detail));
     if (p.tags && p.tags.length) {
       var ul = el("ul", "chips");
       ul.setAttribute("aria-label", "タグ");

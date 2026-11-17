@@ -2,15 +2,25 @@
   {
     "name": "anko",
     "description": "Claude や ChatGPT との会話の中で使う、無料の暗記帳（間隔反復）",
+    "detail": "AI エージェントファースト。MCP サーバーとして動くヘッドレス（専用の画面を持たない）アプリ。問いの登録・出題・採点は、AI アプリとの会話の中で行う。",
     "url": "https://ankomochi.com",
-    "tags": ["学習", "MCP", "AI"],
+    "tags": [
+      "学習",
+      "MCP",
+      "AI"
+    ],
     "status": "公開中"
   },
   {
     "name": "抽象ことばパズル",
     "description": "カードを選んで、ぴったりのことばでまとめる語彙パズル",
+    "detail": "子どもの語彙力と抽象的に考える力を鍛える。答えは意思決定 AI モデルが判定する。",
     "url": "https://chushou-kotoba-puzzle.taikin.workers.dev",
-    "tags": ["教育", "ゲーム", "AI"],
+    "tags": [
+      "教育",
+      "ゲーム",
+      "AI"
+    ],
     "status": "公開中"
   }
 ]

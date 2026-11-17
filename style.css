@@ -41,16 +41,18 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
   gap: 28px;
 }
 
-.profile { display: flex; align-items: center; gap: 18px; }
-.avatar { width: 72px; height: 72px; border-radius: 50%; flex: none; background: var(--chip); }
+.profile { display: flex; align-items: center; gap: 16px; }
+.avatar { width: 64px; height: 64px; border-radius: 50%; flex: none; background: var(--chip); }
 .who { display: grid; gap: 6px; min-width: 0; }
 .handle { margin: 0; font-size: 1.4rem; font-weight: 700; line-height: 1.2; letter-spacing: .01em; }
-.links { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
 .links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: .85rem;
   line-height: 1.4;
-  padding: 4px 10px;
+  padding: 8px 11px;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--fg);
@@ -79,6 +81,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .row:last-child { border-bottom: 1px solid var(--line); }
 .rt { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
 .name {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: underline;
@@ -86,19 +91,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
   text-underline-offset: 4px;
 }
 .name:hover { text-decoration-thickness: 2px; }
-.open {
-  justify-self: start;
-  margin-top: 6px;
-  font-size: .85rem;
-  font-weight: 600;
-  line-height: 1.4;
-  padding: 5px 12px;
-  border: 1px solid var(--accent);
-  border-radius: 6px;
-  text-decoration: none;
-}
-.open:hover { background: var(--accent); color: var(--bg); }
-.desc { margin: 0; }
+.desc { margin: 0; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
 .chip { font-size: .75rem; background: var(--chip); color: var(--muted); border-radius: 4px; padding: 1px 7px; }
 .st { font-size: .75rem; font-weight: 600; color: var(--accent); white-space: nowrap; }

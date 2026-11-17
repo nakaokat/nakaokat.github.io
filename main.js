@@ -33,13 +33,6 @@
       p.tags.forEach(function (t) { ul.appendChild(el("li", "chip", t)); });
       li.appendChild(ul);
     }
-    var open = el("a", "open", "サイトを開く");
-    open.href = p.url;
-    open.target = "_blank";
-    open.rel = "noopener";
-    open.setAttribute("aria-label", p.name + " のサイトを開く");
-    open.appendChild(ext());
-    li.appendChild(open);
     return li;
   }
 

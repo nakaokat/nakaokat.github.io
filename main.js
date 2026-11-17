@@ -17,6 +17,7 @@
 
   function row(p) {
     var li = el("li", "row");
+    var meta = el("div", "meta");
     var rt = el("div", "rt");
     var a = el("a", "name", p.name);
     a.href = p.url;
@@ -25,15 +26,16 @@
     a.appendChild(ext());
     rt.appendChild(a);
     if (p.status) rt.appendChild(el("span", "st", p.status));
-    li.appendChild(rt);
-    li.appendChild(el("p", "desc", p.description));
-    if (p.detail) li.appendChild(el("p", "detail", p.detail));
+    meta.appendChild(rt);
     if (p.tags && p.tags.length) {
       var ul = el("ul", "chips");
       ul.setAttribute("aria-label", "タグ");
       p.tags.forEach(function (t) { ul.appendChild(el("li", "chip", t)); });
-      li.appendChild(ul);
+      meta.appendChild(ul);
     }
+    li.appendChild(meta);
+    li.appendChild(el("p", "desc", p.description));
+    if (p.detail) li.appendChild(el("p", "detail", p.detail));
     return li;
   }
 

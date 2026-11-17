@@ -1,6 +1,6 @@
 # nakaokat.github.io
 
-nakaokat が作っているプロダクトの一覧ページです。https://nakaokat.github.io で公開しています。
+Taiki Nakaoka（nakaokat）が作っているプロダクトの一覧ページです。https://nakaokat.github.io で公開しています。
 
 ## プロダクトの足し方
 

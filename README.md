@@ -11,7 +11,7 @@ nakaokat が作っているプロダクトの一覧ページです。https://nak
   "name": "名前",
   "description": "1 行の説明",
   "url": "https://example.com",
-  "tech": ["技術"],
+  "tags": ["タグ"],
   "status": "公開中"
 }
 ```

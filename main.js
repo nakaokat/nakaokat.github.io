@@ -9,6 +9,12 @@
     return e;
   }
 
+  function ext() {
+    var s = el("span", "ext", "↗");
+    s.setAttribute("aria-hidden", "true");
+    return s;
+  }
+
   function row(p) {
     var li = el("li", "row");
     var rt = el("div", "rt");
@@ -16,17 +22,24 @@
     a.href = p.url;
     a.target = "_blank";
     a.rel = "noopener";
+    a.appendChild(ext());
     rt.appendChild(a);
     if (p.status) rt.appendChild(el("span", "st", p.status));
     li.appendChild(rt);
     li.appendChild(el("p", "desc", p.description));
-    li.appendChild(el("span", "url", p.url.replace(/^https?:\/\//, "").replace(/\/$/, "")));
-    if (p.tech && p.tech.length) {
+    if (p.tags && p.tags.length) {
       var ul = el("ul", "chips");
-      ul.setAttribute("aria-label", "技術");
-      p.tech.forEach(function (t) { ul.appendChild(el("li", "chip", t)); });
+      ul.setAttribute("aria-label", "タグ");
+      p.tags.forEach(function (t) { ul.appendChild(el("li", "chip", t)); });
       li.appendChild(ul);
     }
+    var open = el("a", "open", "サイトを開く");
+    open.href = p.url;
+    open.target = "_blank";
+    open.rel = "noopener";
+    open.setAttribute("aria-label", p.name + " のサイトを開く");
+    open.appendChild(ext());
+    li.appendChild(open);
     return li;
   }
 

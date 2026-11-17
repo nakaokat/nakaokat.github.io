@@ -3,14 +3,14 @@
     "name": "anko",
     "description": "Claude や ChatGPT との会話の中で使う、無料の暗記帳（間隔反復）",
     "url": "https://ankomochi.com",
-    "tech": ["MCP", "Cloudflare", "FSRS"],
+    "tags": ["学習", "MCP", "AI"],
     "status": "公開中"
   },
   {
     "name": "抽象ことばパズル",
     "description": "カードを選んで、ぴったりのことばでまとめる語彙パズル",
     "url": "https://chushou-kotoba-puzzle.taikin.workers.dev",
-    "tech": ["Cloudflare Workers", "Gemini"],
+    "tags": ["教育", "ゲーム", "AI"],
     "status": "公開中"
   }
 ]
